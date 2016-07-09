@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//com/yue/baidutakeout/DownloadShopInfo.py=utf-8
+encoding//com/yue/managemoney/DownloadMoney.py=utf-8
+encoding//com/yue/meituantakeout/DownloadShopInfo.py=utf-8
+encoding//com/yue/meituantakeout/ParseHtml.py=utf-8
+encoding//com/yue/sinanews/DownloadSinaNews.py=utf-8
+encoding//com/yue/weather/GetWeather.py=utf-8

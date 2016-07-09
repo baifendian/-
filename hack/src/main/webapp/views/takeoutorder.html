@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="skin/css/order-list.css"/>
+<header>
+    <a href="#takeout" class="back"></a>
+    <a href="" class="help"></a>
+    支付订单
+</header>
+<article>
+    <!--精选产品-->
+    <div class="wrap marg-no margin-15">
+        <h2 class="title">
+            已选商家
+            <span class="more"> <i></i></span>
+        </h2>
+        <div class="order-l">
+            <div class="order-l-img">
+                <img src="images/img-eat.png" alt="" width="95"  height="73"/>
+            </div>
+            <div class="order-l-p">
+                <h2>
+                    {{shop_name}} <span>评分:{{average_score}}</span><i></i>
+                </h2>
+                <p>{{welfare_info}}</p>
+                <p class="price">
+                    <i>¥</i>{{takeout_price}}
+                    <span>{{delivery_time}}分钟到达，月售{{saled_month}}份</span>
+                </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="wrap marg-no margin-15">
+        <ul class="order-list">
+            <li class="clearfix" style="padding:3px 15px;" ng-click="choice($event)">
+                <div class="order-img">
+                    <img src="images/meituan.png" alt="" width="64" height="64"/>
+                </div>
+                <div class="order-font">
+                    <h2>美团下单：</h2>
+                    <p>1.支付宝在线支付18元，送2元代金卷</p>
+                    <p>2.货到付款：20元</p>
+                    <i class="radio active"></i>
+                </div>
+            </li>
+            <li class="clearfix" style="padding:3px 15px;" ng-click="choice($event)">
+                <div class="order-img">
+                    <img src="images/nuomi.png" alt="" width="64" height="64"/>
+                </div>
+                <div class="order-font">
+                    <h2>美团下单：</h2>
+                    <p>1.支付宝在线支付18元，送2元代金卷</p>
+                    <p>2.货到付款：20元</p>
+                    <i class="radio"></i>
+                </div>
+            </li>
+            <li class="clearfix" style="padding:3px 15px;" ng-click="choice($event)">
+                <div class="order-img">
+                    <img src="images/ele.png" alt="" width="64" height="64"/>
+                </div>
+                <div class="order-font">
+                    <h2>美团下单：</h2>
+                    <p>1.支付宝在线支付18元，送2元代金卷</p>
+                    <p>2.货到付款：20元</p>
+                    <i class="radio"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wrap-btn">
+        <span class="notice-n">推荐使用美团下单，支付16元，省4元</span>
+    </div>
+     <div class="wrap-btn">
+        <span class="font-bg">特殊：用糯米下单刷招行卡，支付10元，省10元</span>
+    </div>
+    <p class="remain">您目前有：1张 2 元美团代金券；2张 1元糯米代金券</p>
+    <p class="wrap-btn clearfix marg-b">
+        <a href="" class="order-ok">确定下单</a>
+        <a href="" class="order-no">选择其他支付方式</a>
+    </p>
+</article>

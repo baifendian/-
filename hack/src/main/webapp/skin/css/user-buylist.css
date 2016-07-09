@@ -1,0 +1,156 @@
+@charset "UTF-8";
+body {
+  background: #f5f5f5;
+  color: #646464;
+  position: relative;
+  padding-bottom: 20px; }
+
+html, body {
+  min-height: 100%;
+  height: 100%; }
+
+header .headernav {
+  background: url("../../skin/i/logo.png") no-repeat;
+  background-size: 100%;
+  width: 168px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -84px;
+  margin-top: -13px; }
+
+nav {
+  margin: 54px 0 10px; }
+  nav .notice-weather {
+    margin: 0 10px;
+    background: #c4e1f2;
+    border: 1px solid #49c3ff;
+    color: #0092e8;
+    height: 30px;
+    padding: 0 15px;
+    font: normal 14px/30px "榛戜綋-绠€ 缁嗕綋";
+    border-radius: 2px; }
+
+.marg-no {
+  margin-bottom: 0px; }
+  .marg-no .title {
+    background: #fff;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #fe9911; }
+  .marg-no .eatwrap {
+    padding: 20px 0;
+    background: #fff; }
+    .marg-no .eatwrap ul {
+      overflow: hidden; }
+      .marg-no .eatwrap ul li {
+        float: left;
+        margin-left: 10px; }
+  .marg-no .btn-d {
+    text-align: center;
+    padding-bottom: 20px; }
+    .marg-no .btn-d .dingchan {
+      width: 190px;
+      height: 40px;
+      border-radius: 4px;
+      background: #fe9911;
+      border: none;
+      color: #fff;
+      font: normal 14px/40px "榛戜綋-绠€ 缁嗕綋"; }
+      .marg-no .btn-d .dingchan a {
+        color: #fff; }
+
+.paylist-c {
+  background: #fff;
+  border-top: 1px solid #e5e5e5; }
+  .paylist-c .icon-kind {
+    padding: 10px 10px 10px 20px; }
+    .paylist-c .icon-kind .list-i {
+      background: url("../../skin/i/list-img.png") no-repeat;
+      background-size: 100%;
+      width: 70px;
+      height: 50px;
+      display: inline-block; }
+  .paylist-c td {
+    text-align: left;
+    color: #919191;
+    height: 50px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5; }
+  .paylist-c .shouyi {
+    text-align: center;
+    color: #fe9911;
+    text-align: center;
+    font: normal 14px/20px "榛戜綋-绠€ 缁嗕綋";
+    padding-right: 30px; }
+    .paylist-c .shouyi span {
+      color: #fe9911; }
+  .paylist-c .f-black {
+    color: #666;
+    font-size: 16px; }
+  .paylist-c .f-36 {
+    font-size: 18px;
+    color: #444; }
+  .paylist-c .f-grey {
+    color: #fff;
+    background: #fe9911;
+    border-radius: 16px;
+    width: 78px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    padding: 2px 10px; }
+  .paylist-c .jiantou {
+    background: url("../../skin/i/jiantou.png") no-repeat;
+    background-size: 100%;
+    width: 9px;
+    height: 13px;
+    display: inline-block; }
+  .paylist-c dl {
+    width: 100%;
+    margin-top: 5px; }
+    .paylist-c dl dt {
+      float: left; }
+    .paylist-c dl dd {
+      float: right;
+      padding-right: 10px; }
+  .paylist-c dl:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+
+.list-p-n {
+  font: normal 14px/24px "microsoft yahei";
+  width: 100%;
+  color: #666666;
+  border-bottom: 1px solid #ebebeb; }
+  .list-p-n .list-font {
+    margin: 10px 10px 10px 20px;
+    display: inline-block; }
+
+.sel-con {
+  background-color: #fff;
+  position: absolute;
+  top: 44px;
+  width: 100%;
+  z-index: 22; }
+  .sel-con ul li {
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    position: relative; }
+  .sel-con ul .active {
+    color: #5b9fe2; }
+    .sel-con ul .active i {
+      background: url("../../skin/i/right.png") no-repeat;
+      width: 15px;
+      height: 12px;
+      background-size: 100%;
+      position: absolute;
+      top: 14px;
+      right: 30px; }
+
+/*# sourceMappingURL=user-buylist.css.map */

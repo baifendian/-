@@ -1,0 +1,135 @@
+body{
+        background-color: #f5f5f5;
+}
+footer{
+        height: 49px;
+        .footer-m{
+                margin: 15px;
+        }
+        .buy-btn{
+                background: #6dcbff;
+                color: #fff;
+                text-align: center;
+                font:normal 16px/32px "microsoft yahei";
+                display: inline-block;
+                width: 100%;
+                border-radius: 4px;
+        }
+}
+article{
+        position: absolute;
+        top: 44px;
+        width: 100%;
+        .kind{
+                padding: 20px 15px;
+                background: #fe9911;
+                border-bottom: 1px solid #ffcc88;
+                ul{
+                        margin-bottom: 10px;
+                        li{
+                                width: 33.33%;
+                                float: left;
+                                line-height: 40px;
+                                text-align: left;
+                                p{
+                                        color: #fff;
+                                }
+                                .font-big{
+                                        font-size: 30px;
+                                        color: #fff;
+                                }
+                        }
+                        .last-kind{
+                                p{
+                                        text-align: right;
+                                }
+                        }
+                        .mid-kind{
+                                p{
+                                        text-align: center;
+                                }
+                        }
+                }
+        }
+        .kind-detail{
+                color: #fff;
+                padding: 10px 15px 25px;
+                background: #fe9911;
+        }
+        .tri-down{
+                width:0;
+                height:0;
+                border-left:16px solid transparent;
+                border-right:16px solid transparent;
+                border-top:16px solid #fe9911;
+                position: absolute;
+                border-bottom: -16px;
+                left: 50%;
+                margin-left: -16px;
+        }
+        .notice{
+                background: #fff;
+                border-bottom: 1px solid #ebebeb;
+                padding:20px 20px 10px;
+                color: #666;
+                font:normal 14px/24px "microsoft yahei";
+        }
+        .notice-det{
+                border-top: 1px solid #ebebeb;
+                background: #fff;
+                margin-top: 15px;
+                h2{
+                        font:normal 17px/46px "microsoft yahei";
+                        text-indent: 15px;
+                        border-bottom: 1px solid #ebebeb;
+                }
+                ul{
+                        padding-bottom: 60px;
+                        li{
+                                padding: 15px;
+                                border-bottom: 1px solid #ebebeb;
+                                span{
+                                        float: left;
+                                }
+                        }
+                        .f-more{
+                                width: 75%;
+                        }
+                }
+                .f-grey{
+                        color: #999;
+                        margin-right: 20px;
+                        width: 17%;
+                }
+        }
+}
+
+/*
+理财列表style start*/
+.back{
+        background: url("../../skin/i/back.png") no-repeat;
+        background-size: 100%;
+        width: 25px;
+        height:25px;
+        position: absolute;
+        left: 15px;
+        top: 10px;
+}
+.help{
+        background: url("../../skin/i/help.png") no-repeat;
+        background-size: 100%;
+        width: 25px;
+        height:25px;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+}
+.tit-table{
+        width: 100%;
+        tr{
+                td{
+                        padding: 0 0 0 5px;
+                        text-align: left;
+                }
+        }
+}

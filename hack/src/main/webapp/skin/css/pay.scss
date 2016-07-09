@@ -1,0 +1,162 @@
+body{
+        background-color: #f5f5f5;
+}
+footer{
+        height: 49px;
+        .footer-m{
+                margin: 15px;
+        }
+        .buy-btn{
+                background: #6dcbff;
+                color: #fff;
+                text-align: center;
+                font:normal 16px/32px "microsoft yahei";
+                display: inline-block;
+                width: 100%;
+                border-radius: 4px;
+        }
+}
+article{
+        .bg{
+                background: #fff;
+                border-bottom: 1px solid #ebebeb;
+        }
+        position: absolute;
+        top: 44px;
+        width: 100%;
+        padding-bottom: 20px;
+        .detail{
+                padding-top: 20px;
+                p{
+                        text-align: center;
+                        color: #333;
+                        margin-bottom: 10px;
+                }
+                .time{
+                        margin: auto;
+                        width: 145px;
+                        span{
+                                background: #333;
+                                display: inline-block;
+                                width: 26px;
+                                height: 26px;
+                                float: left;
+                                text-align: center;
+                                font:normal 12px/26px "microsoft yahei";
+                                margin-right: 5px;
+                                color: #fff;
+                        }
+                        .point{
+                                background-color: transparent;
+                                width: 15px;
+                                color: #333;
+                        }
+                }
+
+        }
+        .det-wrap{
+                padding: 25px;
+                background: #fff;
+                h2{
+                        font:normal 20px/30px "microsoft yahei";
+                        color: #333;
+                        margin-bottom: 15px;
+                }
+                p{
+                        color: #ccc;
+                        margin-bottom: 5px;
+                }
+                .det-l{
+                        float: left;
+                }
+                .mr{
+                        float: right;
+                        i{
+                                color: #fe9911;
+                }
+                }
+                .f-black{
+                        color: #333;
+                        margin-left: 10px;
+                }
+                b{
+                        color: #fe9911;
+                        font:normal 18px/20px "microsoft yahei";
+                        margin-left: 10px;
+                }
+        }
+        .list{
+                background: #fff;
+                border-bottom: 1px solid #ebebeb;
+                border-top: 1px solid #ebebeb;
+                margin-top: 15px;
+                ul{
+                        height: auto;
+                        width: 100%;
+                        li{
+                                border-bottom: 1px solid #ebebeb;
+                                padding: 15px;
+                        }
+                        li:last-child{
+                                border-bottom: none;
+                        }
+                        div{
+                                float: left;
+                                h2{
+                                        font-size: 18px;
+                                        color: #333;
+                                }
+                        }
+                        .weixin{
+                                background: url("../../skin/i/weixin.png") no-repeat ;
+                                background-size: 100%;
+                                width: 20px;
+                                height: 18px;
+                                float: left;
+                                margin-top: 10px;
+                                margin-right: 20px;
+                        }
+                        .zhifu{
+                                @extend .weixin;
+                                background: url("../../skin/i/zhifu.png") no-repeat ;
+                                background-size: 100%;
+                        }
+                        .nomorl{
+                                background: url("../../skin/i/nomarl.png") no-repeat ;
+                                background-size: 100%;
+                                width: 20px;
+                                height: 20px;
+                                float: right;
+                                margin-top: 10px;
+                        }
+                        .active{
+                                background: url("../../skin/i/active.png") no-repeat ;
+                                background-size: 100%;
+                        }
+                }
+        }
+}
+.footer-m{
+        margin: 15px;
+        .buy-btn{
+        background: #6dcbff;
+        color: #fff;
+        text-align: center;
+        font:normal 16px/32px "microsoft yahei";
+        display: inline-block;
+        width: 100%;
+        border-radius: 4px;
+        }
+}
+
+/*
+理财列表style start*/
+.back{
+        background: url("../../skin/i/back.png") no-repeat;
+        background-size: 100%;
+        width: 25px;
+        height:25px;
+        position: absolute;
+        left: 15px;
+        top: 10px;
+}

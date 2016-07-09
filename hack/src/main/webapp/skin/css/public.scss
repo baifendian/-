@@ -1,0 +1,574 @@
+@charset "utf-8";
+a,img,button,input,textarea,span,label{-webkit-tap-highlight-color:rgba(0,0,0,0); background: none;}
+*{
+        font-family: "microsoft yahei";
+        font-size: 14px;
+        color: #666;
+}
+input,textarea{-webkit-appearance:none; border: none;}
+
+html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,address,big,cite,code,del,em,font,img,ins,small,strong,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend{margin:0;padding:0}
+ol,ul{list-style:none}
+:focus{outline:0}
+a img{border:0}
+img{vertical-align:middle}
+table{empty-cells:show}
+em{font-style:normal}
+.fl{float:left}
+.fr{float:right}
+.fn{float:none}
+.al{text-align:left}
+.ac{text-align:center}
+.ar{text-align:right}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+/*.clearfix{display:inline-table}*/
+a{color:#5b9fe2;text-decoration:none}
+a:hover{color:#5b9fe2;text-decoration:none}
+.pr{ position:relative;}
+.bort-none{
+        border-top: none!important;
+}
+.mt60{
+        margin-top: 60px;
+}
+.mt-30{
+        margin-top: 20px;
+}
+.mt-20{
+        margin-top: 20px;
+}
+.mr-30{
+        margin-right: 30px;
+}
+.mb-30{
+        margin-bottom: 30px;
+}
+.grey-color{
+        color: #999;
+}
+p{
+        margin: 0;
+        padding: 0;
+}
+.hide{
+        display: none;
+}
+h2,h3,h4,h5,h6,i{
+        font-style: normal;
+        font-weight: normal;
+}
+.notice{
+        color: #ff7f00;
+}
+.yellow-30{
+        color:#ff7f00 ;
+        font-size: 18px;
+        font-family: Arial;
+}
+.grey-bg{
+        background: #fafafa;
+}
+.btn{
+        border: 1px solid #5b9fe2;
+        border-radius: 3px;
+        background: #fff;
+        color: #5b9fe2;
+        font:normal 16px/40px "microsoft yahei";
+        width: 100%;
+        height: 40px;
+        display: inline-block;
+        text-align: center;
+}
+.btn-none{
+        @extend .btn;
+        background: #f2f2f2;
+        border: 1px solid #ebebeb;
+        color: #cacaca;
+}
+.btn-none:hover{
+        color: #cacaca;
+}
+.btn-get{
+        background: #5b9fe2;
+        border-radius: 3px;
+        padding: 5px 6px;
+        color: #fff;
+        border: none;
+        position: absolute;
+        top: 10px;
+}
+.btn-get-none{
+        @extend .btn-get;
+        background: #d6d6d6;
+}
+.btn-get:hover{
+        color: #fff;
+}
+.check-box{
+        width: 14px;
+        height: 14px;
+        border: 1px solid #5b9fe2;
+        border-radius: 0;
+        box-shadow: none;
+        margin:0;
+        border: 1px solid #5b9fe2;
+        background: red;
+}
+.f-blue{
+        color: #5b9fe2;
+}
+
+
+/*=============列表展示样式开始========================*/
+.table-com{
+        width: 100%;
+        border-collapse: collapse;
+}
+/*==================================底部菜单样式开始==================================*/
+footer{
+        height: 48px;
+        border-top:1px solid #e2e2e2;
+        background: #fafafa;
+        width: 100%;
+        position: fixed;
+        bottom:0;
+}
+.article{
+        width: 100%;
+}
+.footer-nav{
+        width: 100%;
+        height: 48px;
+}
+.footer-b{
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+}
+.footer-nav li{
+        float: left;
+        position: relative;
+        width: 20%;
+        height: 48px;
+}
+.f-img{
+        background: url("../../skin/i/menu-1.png") no-repeat;
+        position: relative;
+        top: 6px;
+        left: 50%;
+        margin-left: -10px;
+        width:25px;
+        height: 21px;
+        display: block;
+        background-size: 100%;
+}
+.active .f-img{
+        background:url("../../skin/i/menu-1-active.png") no-repeat;
+        background-size: 100%;
+}
+.f-img2{
+        @extend .f-img;
+        width:19px;
+        height: 23px;
+        margin-left: -8px;
+        background: url("../../skin/i/menu-2.png") no-repeat;
+        background-size: 100%;
+}
+.active .f-img2{
+        background:url("../../skin/i/menu-2-active.png") no-repeat;
+        background-size: 100%;
+}
+.f-img3{
+        @extend .f-img;
+        width:21px;
+        height: 21px;
+        background: url("../../skin/i/menu-3.png") no-repeat;
+        background-size: 100%;
+}
+.active .f-img3{
+        background:url("../../skin/i/menu-3-active.png") no-repeat;
+        background-size: 100%;
+}
+.f-img4{
+        @extend .f-img;
+        width:21px;
+        height: 21px;
+        background: url("../../skin/i/menu-4.png") no-repeat;
+        background-size: 100%;
+}
+.active .f-img4{
+        background:url("../../skin/i/menu-4-active.png") no-repeat;
+        background-size: 100%;
+}
+.f-img5{
+        @extend .f-img;
+        width:21px;
+        height: 21px;
+        background: url("../../skin/i/menu-5.png") no-repeat;
+        background-size: 100%;
+}
+.active .f-img5{
+        background:url("../../skin/i/menu-5-active.png") no-repeat;
+        background-size: 100%;
+}
+.f-name{
+        margin-top: 6px;
+        color: #646464;
+}
+.active .f-name{
+        color: #fe9911;
+}
+.footer-b.active{
+        background: #efefef;
+        color:#5b9fe2 ;
+        box-sizing: border-box;
+}
+
+
+/*============================底部菜单样式结束=================================*/
+
+
+/*===============================公用头部样式开始==============================*/
+
+header{
+        background: #fe9911;
+        height: 44px;
+        width: 100%;
+        text-align: center;
+        font:normal 18px/44px "microsoft yahei";
+        color: #fff;
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        .header-tit{
+                font-size: 18px;
+                color: #fff;
+        }
+}
+.back{
+        background: url("../../skin/i/nav-back.png") no-repeat;
+        position: absolute;
+        width: 30px;
+        height: 23px;
+        background-size: 100%;
+        top: 10px;
+        left: 0;
+}
+/*===============================公用头部样式结束==============================*/
+
+/*========================================================列表样式开始===============================================*/
+article{
+        .marg-10{
+                padding: 0 10px;
+                margin-bottom: 10px;
+        }
+}
+.wrap{
+        background: #fff;
+        margin-bottom: 10px;
+        .title{
+                padding: 10px 10px 5px;
+                color: #646464;
+        }
+        .cont{
+                background: #fff;
+                border-bottom: 1px solid #e5e5e5;
+                border-top: 1px solid #e5e5e5;
+                dl{
+                        padding: 10px 0;
+                        border-bottom: 1px solid #e5e5e5;
+                        width: 100%;
+                        position: relative;
+                        line-height: 30px;
+                        dt{
+                                float: left;
+                                text-align: left;
+                                line-height: 30px;
+                                font-size: 16px;
+                                color: #646464;
+                                padding-left:10px;
+                        }
+                        dd{
+                                float: right;
+                                padding-right: 10px;
+                        }
+                }
+                dl:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+                dl:last-child{
+                        border-bottom: none;
+                }
+                .text-inp{
+                        height: 28px;
+                        line-height: 28px;
+                        border: none;
+                        text-align: right;
+                }
+                .text-inp-small{
+                        @extend .text-inp;
+                        width: 105px;
+                        text-align: left;
+                }
+        }
+        .section {
+                background: #fff;
+                border-bottom: 1px solid #e5e5e5;
+                border-top: 1px solid #e5e5e5;
+                a{
+                        padding: 12px 10px;
+                        border-bottom: 1px solid #e5e5e5;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        box-sizing: border-box;
+                        .wrap-l{
+                                font-size: 16px;
+                                color: #646464;
+                        }
+                        .wrap-r{
+                                float: right;
+                                padding-right: 10px;
+                        }
+                }
+                a:last-child{
+                        border-bottom: none;
+                }
+        }
+        .borb-none{
+                border-top: none;
+        }
+        .cont-linglei{
+                background: #fff;
+                border-bottom: 1px solid #e5e5e5;
+                border-top: 1px solid #e5e5e5;
+                padding-left:10px;
+                ul{
+                        padding: 14px 0;
+                        border-bottom: 1px solid #e5e5e5;
+                        width: 100%;
+                        li{
+                                width: 50%;
+                                float: left;
+                        }
+                }
+                ul:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+                ul:last-child{
+                        border-bottom: none;
+                }
+                .grey-15{
+                        font-size: 16px;
+                        color: #646464;
+                }
+        }
+}
+/*========================================================列表样式结束=============================================*/
+
+/*================================================================弹窗样式开始=======================================*/
+.mask{
+        width: 100%;
+        height: 100%;/*
+        display: block;*/
+        position: absolute;
+        min-height: 100%;
+        height: 100% !important;
+        z-index: 11;
+        left: 0;
+        top: 0;
+        background: #000;
+        opacity: .5;
+}
+.alert-cont{
+        position: absolute;
+        top: 50%;
+        background: #fff;
+        border-radius: 10px;
+        z-index: 22;
+        width: 92%;
+        left: 4%;
+        h2{
+                height: 46px;
+                font: normal 16px/46px "microsoft yahei" ;
+                border-bottom: 1px solid #e5e5e5;
+                text-align: center;
+                color: #646464;
+        }
+        .borb-none{
+                border-bottom: none;
+        }
+        .alert-c{
+                padding: 10px 10px 20px 10px;
+        }
+        .money-num{
+                padding: 0 0 10px;
+        }
+        .inp-psw{
+                float: left;
+                height: 35px;
+                width: 100%;
+                padding: 0;
+                border: 1px solid #e5e5e5;
+                text-align: center;
+                font-size: 18px;
+                box-shadow: none;
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                -ms-progress-appearance: none;
+                border-radius: 0;
+                outline:none;
+        }
+        .alert-btn{
+                width: 100%;
+                border-top: 1px solid #e5e5e5;
+                height: 44px;
+                line-height: 44px;
+                text-align: center;
+                .forget-btn{
+                        float: left;
+                        border-right: 1px solid #e5e5e5;;
+                        color: #d1d1d1;
+                        text-align: center;
+                        width: 50%;
+
+                }
+                .pay-btn{
+                        text-align: center;
+                        width: 49%;
+                        float: left;
+                }
+                .pay-btn-one{
+                        text-align: center;
+                        width: 100%;
+                }
+        }
+}
+/*================================================================弹窗样式结束=======================================*/
+
+
+/*=================================================================提示信息样式开始==========================================*/
+.infor{
+        padding: 0 10px 5px;
+        color: #919191;
+        position: relative;
+        .f-yellow{
+                color: #ff7f00;
+        }
+        .notie-icon{
+                background: url("../../skin/i/notice.png") no-repeat;
+                width: 16px;
+                height: 16px;
+                background-size: 100%;
+                position: absolute;
+        }
+        .infor-f{
+                padding-left:20px;
+        }
+}
+/*=================================================================提示信息样式结束==========================================*/
+
+
+.chk_1 {
+        display: none;
+}
+.chk_1 + label {
+        background-color: #FFF;
+        border: 1px solid #C1CACA;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+        width: 16px;
+        height: 16px;
+        border-radius: 5px;
+        display: inline-block;
+        position: relative;
+}
+.chk_1 + label:active {
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+.check-book label{
+        background-color: #fff;
+        border: 1px solid #92A1AC;
+        width: 16px;
+        height: 16px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+        color: #243441;
+}
+.check-book  .active:after{
+        content: '\2714';
+        position: absolute;
+        top: -5px;
+        left: 2px;
+        color: #758794;
+        text-align: center;
+        font-size: 1.2em;
+        padding: 1px 0 0 0;
+        vertical-align: text-top;
+}
+/*.chk_1:checked + label {
+        background-color: #ECF2F7;
+        border: 1px solid #92A1AC;
+        width: 16px;
+        height: 16px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+        color: #243441;
+}*/
+/*.chk_1:checked + label:after {
+        content: '\2714';
+        position: absolute;
+        top: -5px;
+        left: 2px;
+        color: #758794;
+        text-align: center;
+        font-size: 1.2em;
+        padding: 1px 0 0 0;
+        vertical-align: text-top;
+}*/
+.xieyi{
+        position: absolute;
+        top: 2px;
+}
+
+.margin-15{
+        margin-top: 15px;
+}
+.marg-top{
+        top: 30%;
+}
+.pad-lr{
+        padding: 0 10px;
+        padding-bottom: 60px;
+}
+.loading{
+        background: #d6d6d6;
+        text-align: center;
+        color:#646464;
+        display: inline-block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        &:hover{
+                color: #646464;
+        }
+}
+.alert-n{
+        margin: auto;
+        display: table;
+       margin-top: 50px;
+        span{
+                background: -moz-linear-gradient(top, #636166, #474747 8%);
+                background: -webkit-gradient(linear, 0 0, 0 8%, from(#636166), to(#474747));
+                border-top: 1px solid #642f10;
+                box-shadow: 2px 2px 10px #565656;
+                border-radius: 5px;
+                padding: 10px 20px;
+                color: #fff;
+                font-size: 14px;
+                opacity:0;
+                position: relative;
+        }
+}
+
+
+.marg-b{
+        margin-bottom: 60px;
+}

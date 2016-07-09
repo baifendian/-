@@ -1,0 +1,113 @@
+<link rel="stylesheet" href="skin/css/user-buylist.css"/>
+<nav>
+    <div class="notice-weather" ng-module="weather">
+        {{weather}}
+    </div>
+</nav>
+<article>
+    <!--午餐吃啥-->
+    <div class="wrap marg-no">
+        <h2 class="title">午餐吃啥</h2>
+        <div class="eatwrap">
+            <ul>
+                <li><img src="/hack/images/meishi1.jpg" alt="" width="81" height="62"/></li>
+                <li><img src="/hack/images/meishi2.jpg" alt="" width="81" height="62"/></li>
+                <li><img src="/hack/images/meishi3.jpg" alt="" width="81" height="62"/></li>
+                <li><img src="/hack/images/meishi4.jpg" alt="" width="81" height="62"/></li>
+            </ul>
+        </div>
+        <p class="btn-d">
+            <button type="button" class="dingchan"><a href="#takeout">我要订餐</a></button>
+        </p>
+    </div>
+
+    <!--趣闻-->
+    <div class="wrap marg-no margin-15">
+        <h2 class="title">趣闻</h2>
+        <div class="paylist-c">
+            <table class="table-com">
+                <tr ng-repeat="fnew in funnynews">
+                    <td class="icon-kind">
+                        <img src={{fnew.images}} width="70px" height="50px"/>
+                        <!-- <span class="list-i"></span> -->
+                    </td>
+                    <td>
+                        <span class="list-p">{{fnew.title}}</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--要闻-->
+    <div class="wrap marg-no margin-15">
+        <h2 class="title">要闻</h2>
+        <div class="paylist-c">
+            <table class="table-com">
+                <tr ng-repeat="inew in importnews">
+                    <td class="icon-kind">
+                        <img src="{{inew.images}}" width="70px" height="50px"/>
+                        <!-- <span class="list-i"></span> -->
+                    </td>
+                    <td>
+                        <span class="list-p">{{inew.title}}</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--行业-->
+    <div class="wrap marg-no margin-15">
+        <h2 class="title">行业</h2>
+        <div class="paylist-c">
+            <p class="list-p-n" ng-repeat="pnew in professionalnews">
+                <span class="list-font">{{pnew.title}}</span>
+            </p>
+        </div>
+    </div>
+    <!--体育-->
+    <div class="wrap marg-no margin-15">
+        <h2 class="title">体育</h2>
+        <div class="paylist-c">
+            <p class="list-p-n" ng-repeat="snew in sportnews">
+                <span class="list-font">{{snew.title}}</span>
+            </p>
+        </div>
+    </div>
+    <!--军事-->
+    <div class="wrap marg-no margin-15">
+        <h2 class="title">军事</h2>
+        <div class="paylist-c">
+            <p class="list-p-n" ng-repeat="panew in paramilitarynews">
+                <span class="list-font">{{panew.title}}</span>
+            </p>
+        </div>
+    </div>
+    <!--理财-->
+    <div class="wrap marg-no margin-15 pad-b">
+        <h2 class="title">理财</h2>
+        <div class="paylist-c marg-b">
+            <table class="table-com">
+                <tr ng-repeat="money in moneys" ng-click="gotoDetail(money.NetValue, money.FinDate, money.PrdName)">
+                    <td class="shouyi">
+                        <span><b class="yellow-30">{{money.NetValue}}</span><br/>
+                        <span>近1年收益</span>
+                    </td>
+                    <td>
+                        <dl>
+                            <dt><span class="f-black">{{money.PrdCode}}</span></dt>
+                            <dd><span>&nbsp;</span></dd>
+                        </dl>
+                        <dl>
+                            <dt><span class="f-grey">{{money.Style}}</span></dt>
+                            <dd><span class="jiantou"></span></dd>
+                        </dl>
+                        <dl>
+                            <dt><span class="grey-color">{{money.Term}}</span></dt>
+                            <dd><span>&nbsp;</span></dd>
+                        </dl>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</article>

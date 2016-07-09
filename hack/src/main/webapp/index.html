@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html ng-app="mainApp">
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>生活大爆炸</title>
+    <link rel="stylesheet" href="skin/css/public.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+</head>
+<body>
+<header>
+    <div class="headernav">
+    </div>
+</header>
+<div ng-view></div>
+<footer>
+    <ul class="footer-nav">
+        <li>
+            <a href="#index" class="footer-b active">
+                <span class="f-img"></span>
+                <p class="f-name">首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="#reminder" class="footer-b">
+                <span class="f-img2"></span>
+                <p class="f-name">备忘</p>
+            </a>
+        </li>
+        <li>
+            <a href="#takeout" class="footer-b">
+                <span class="f-img3"></span>
+                <p class="f-name">叫餐</p>
+            </a>
+        </li>
+        <li>
+            <a href="#managingmoney" class="footer-b">
+                <span class="f-img4"></span>
+                <p class="f-name">理财</p>
+            </a>
+        </li>
+        <li>
+            <a href="#me" class="footer-b">
+                <span class="f-img5"></span>
+                <p class="f-name">我的</p>
+            </a>
+        </li>
+    </ul>
+</footer>
+<script type="text/javascript">
+    $(window).on('hashchange',function(){
+        changeTab();
+    }); 
+
+    function changeTab() {
+        var hash = window.location.hash.substring(2).split('/')[0];
+        console.log(hash);
+        if ('takeoutorder' == (hash)) {
+            hash = 'takeout';
+        }
+        if ('managingmoneylist' == hash || 'managingmoneydetail' == hash) {
+            hash = 'managingmoney';
+        }
+        if ('order' == hash) {
+            hash="managingmoney";
+        }
+        $('a[href]').removeClass('active')
+        $('a[href=#'+hash+']').addClass('active')
+    }
+    changeTab();
+</script>
+</body>
+</html>

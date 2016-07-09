@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="skin/css/money-detail.css"/>
+<header>
+    <a href="#managingmoneylist" class="back"></a>
+    产品详情
+    <a href="" class="help"></a>
+</header>
+<article>
+    <div class="kind">
+        <ul>
+            <li>
+                <p>上日年化</p>
+                <p><span class="font-big">{{netvalue}}</span>%</p>
+            </li>
+            <li class="mid-kind">
+                <p>投资期限（天）</p>
+                <p><span class="font-big">{{findate}}</span></p>
+            </li>
+            <li class="last-kind">
+                <p>随时可赎回</p>
+                <p>R2稳健型</p>
+            </li>
+            <div class="clearfix"></div>
+        </ul>
+    </div>
+    <div class="kind-detail">
+        起购金额：首次5万（人民币）起购，再购买1元起
+        购买时间：随时可购买
+    </div>
+    <div class="tri-down"></div>
+    <div class="notice">
+        高流动性，开放7*24小时申购或赎回。
+    </div>
+    <div class="notice-det">
+        <h2>买入须知</h2>
+        <ul>
+            <li class="clearfix">
+                <span class="f-grey">产品名称</span>
+                <span>{{prdname}}</span>
+            </li>
+            <li class="clearfix">
+                <span class="f-grey">赎回说明</span>
+                <span class="f-more">产品到期前，投资者可随时赎回该产品<br/>
+<!-- 普通全部赎回：<br/>
+工作日09:30-16:30，实时到账 <br/>
+工作日0:00-09:30，本金实时到账，分红当日9:30后到账 <br/>
+其余时间：下一工作日9:30后到账<br/> -->
+<!-- 快速全部赎回：工作日实时到账。<br/>
+其它时间，本金实时到账，分红下一工作日9:30后到账</span> -->
+            </li>
+        </ul>
+    </div>
+</article>
+<footer style="height: 54px;margin-bottom: 60px;">
+    <div class="footer-m">
+        <a href="#order/{{prdname}}&{{netvalue}}&{{findate}}" class="buy-btn">立即购买</a>
+    </div>
+</footer>

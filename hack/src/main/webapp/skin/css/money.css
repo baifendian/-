@@ -1,0 +1,126 @@
+body {
+  background-color: #f5f5f5; }
+
+.wrap .title {
+  background: #fff;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #fe9911;
+  padding: 10px 10px 5px;
+  color: #646464; }
+
+.charts-wrap {
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #ebebeb; }
+
+.buy-btn {
+  display: inline-block;
+  background: #fe9911;
+  border-radius: 4px;
+  width: 56px;
+  height: 26px;
+  color: #fff;
+  text-align: center;
+  font: normal 16px/26px "microsoft yahei"; }
+  .buy-btn a {
+    color: #fff; }
+
+.money-list {
+  height: auto; }
+  .money-list .hot, .money-list .tuijian {
+    background: url("../../skin/i/hot.png") no-repeat;
+    width: 35px;
+    height: 36px;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .money-list .tuijian {
+    background: url("../../skin/i/tuijian.png") no-repeat;
+    background-size: 100%; }
+  .money-list table {
+    padding: 15px 0; }
+    .money-list table tr {
+      height: auto; }
+    .money-list table td {
+      border-bottom: none;
+      text-align: left;
+      padding-left: 5px;
+      height: auto; }
+      .money-list table td dt {
+        font-size: 16px;
+        color: #666; }
+      .money-list table td .font-yellow {
+        color: #fe9911; }
+      .money-list table td dd {
+        font-size: 12px;
+        color: #999; }
+  .money-list ul li {
+    position: relative;
+    border-bottom: 1px solid #e2e2e2; }
+    .money-list ul li .shouc, .money-list ul li .shouc-grey {
+      background: url("../../skin/i/shouc.png") no-repeat;
+      width: 14px;
+      height: 14px;
+      background-size: 100%;
+      display: inline-block; }
+    .money-list ul li .shouc-grey {
+      background: url("../../skin/i/shouc-grey.png") no-repeat;
+      background-size: 100%; }
+
+.tab-wrap {
+  background: #fff;
+  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb; }
+  .tab-wrap ul {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #ebebeb; }
+    .tab-wrap ul li {
+      float: left;
+      width: 33%;
+      border-right: 1px solid #ebebeb;
+      height: 40px;
+      text-align: center;
+      font: normal 16px/40px "microsoft yahei"; }
+    .tab-wrap ul li:last-child {
+      border-right: none; }
+    .tab-wrap ul .active {
+      color: #fe9911; }
+  .tab-wrap .charts2 {
+    margin: 25px auto;
+    text-align: center; }
+
+.num {
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  background: #fff;
+  margin: 0 10px 10px;
+  padding: 10px; }
+  .num .chart-1 {
+    float: left; }
+  .num .charts-num {
+    float: left;
+    margin-top: 40px; }
+    .num .charts-num .font-grey {
+      color: #999; }
+
+article {
+  position: absolute;
+  top: 59px;
+  width: 100%; }
+
+.more {
+  float: right; }
+  .more a {
+    color: #666; }
+  .more i {
+    background: url("../../skin/i/jiantou.png") no-repeat;
+    background-size: 100%;
+    width: 9px;
+    height: 13px;
+    top: 2px;
+    display: inline-block; }
+
+/*# sourceMappingURL=money.css.map */

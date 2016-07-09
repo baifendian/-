@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="skin/css/money.css"/>
+<header>
+    理财
+</header>
+<article>
+    <div class="num">
+        <div class="charts-num">
+            <span class="yellow-30">4.89</span><br/>
+            <span class="font-grey">累积收益（元）</span>
+        </div>
+        <div class="chart-1">
+            <img src="images/charts-1.jpg" alt="" width="230" height="123"/>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!--精选产品-->
+    <div class="wrap marg-no margin-15">
+        <h2 class="title">精选产品 <span class="more"><a href="#managingmoneylist">更多</a><i class="jiantou"></i></span></h2>
+        <div class="money-list">
+            <ul>
+                <li ng-repeat="m in data">
+                    <i class="hot"></i>
+                    <table>
+                        <tr>
+                            <td>
+                                <span class="shouc"></span>
+                            </td>
+                            <td width="32%">
+                                <dl>
+                                    <dt>{{m.PrdName}}</dt>
+                                    <dd>{{m.PrdCode}}</dd>
+                                </dl>
+                            </td>
+                            <td width="25%">
+                                <dl>
+                                    <dt><b class="font-yellow">{{m.NetValue}}</b></dt>
+                                    <dd>{{m.Term}}</dd>
+                                </dl>
+                            </td>
+                            <td width="20%">
+                                <dl>
+                                    <dt>{{m.FinDate}}</dt>
+                                    <dd></dd>
+                                </dl>
+                            </td>
+                            <td>
+                                <span class="buy-btn"><a href="#managingmoneydetail/{{m.NetValue | removepercent}}&{{m.FinDate}}&{{m.PrdName}}">抢购</a></span>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="tab-wrap margin-15 marg-b">
+        <ul>
+            <li class="active">理财  50%</li>
+            <li>存款  35%</li>
+            <li>日常  15%</li>
+        </ul>
+        <div class="charts2">
+            <img src="images/charts-2.png" alt="" width="230" height="142"/>
+        </div>
+    </div>
+</article>

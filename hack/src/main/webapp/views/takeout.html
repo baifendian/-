@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="skin/css/ordering.css"/>
+<header>
+    <a href="" class="back"><span>北京</span><i></i></a>
+    叫餐
+</header>
+<nav>
+    <a href="" class="add-btn" ng-click="selforder()"><i></i><span>自助点餐</span></a>
+</nav>
+<article>
+    <!--精选产品-->
+    <div class="wrap marg-no margin-10">
+        <h2 class="title">
+            为您推荐
+            <span class="more"> <i></i></span>
+        </h2>
+        <div class="order-l" ng-repeat="shop in shops" ng-click="order(shop)">
+            <div class="order-l-img">
+                <img src="{{shop.images}}" alt="" width="95"  height="73"/>
+            </div>
+            <div class="order-l-p">
+                <h2>
+                    {{shop.shop_name}} <span>评分:{{shop.average_score}}</span><i></i>
+                </h2>
+                <p>{{shop.welfare_info | substr}}</p>
+                <p class="price">
+                    <i>¥</i>{{shop.takeout_price}}
+                    <span>{{shop.delivery_time}}分钟到达，月售{{shop.saled_month}}份</span>
+                </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="maskdiv hide"></div>
+    </div>
+</article>
+<div class="mask-alert hide">
+    <div class="tips"></div>
+    <ul>
+        <li class="active">正餐</li>
+        <li>小吃</li>
+        <li>聚餐</li>
+    </ul>
+    <div class="pad-lr">
+        <div class="eat-btn clearfix">
+            <a href="" class="classify active" ng-click="check($event)">粥</a>
+            <a href="" class="classify"  ng-click="check($event)">饼</a>
+            <a href="" class="classify"  ng-click="check($event)">面</a>
+            <a href="" class="classify"  ng-click="check($event)">饭</a>
+            <a href="" class="classify"  ng-click="check($event)">荤</a>
+            <a href="" class="classify"  ng-click="check($event)">素</a>
+        </div>
+        <div class="price-inp clearfix">
+            <input type="text" class="price-w" placeholder="10"/>
+            <i>-</i>
+            <input type="text" class="price-w" placeholder="30"/>
+            <i>元</i>
+            <select name="" id="" class="price-sel">
+                <option value="">20</option>
+                <option value="">30</option>
+            </select>
+            <span class="arrive-time">分钟内到达</span>
+        </div>
+        <div class="search clearfix">
+            <input type="text" class="search-w" placeholder="请输入关键词"/>
+            <i class="search-icon"></i>
+            <button type="button" class="search-btn">搜索</button>
+        </div>
+        <div class="price-btn clearfix">
+            <a href="" class="btn-ok" ng-click="selforder()">确定</a>
+            <a href="" class="btn-no">重置</a>
+        </div>
+    </div>
+</div>
